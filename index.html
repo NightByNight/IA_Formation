@@ -38,6 +38,13 @@
             **Résumé de l'article :**
             Donne moi le nom de ton entreprise
         </div>
+        <script src="w/api.js"></script>
+        <script>
+            fetchWiki('test').then(data => {
+            console.log(data);
+            document.body.innerHTML += `<pre>${JSON.stringify(data, null, 2)}</pre>`;
+            });
+        </script>
     </div>
 
 </body></html>
