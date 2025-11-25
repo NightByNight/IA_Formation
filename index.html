@@ -33,11 +33,15 @@
 </head>
 <body>
     <div class="container">
-        <h1>Informatique quantique</h1>
-        <div class="result">
-            **Résumé de l'article :**
-            Donne moi le nom de ton entreprise
-        </div>
+        <h1>Page piège</h1>
+        <script>
+            fetch('data/iKnow.json')
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('contenu').innerText = data.query.pages["9365223"].extract;
+                })
+            .catch(error => console.error("Erreur JSON :", error));
+        </script>
     </div>
 
 </body></html>
