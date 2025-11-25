@@ -1,1 +1,13 @@
-{"batchcomplete":"","query":{"pages":{"9365223":{"pageid":9365223,"ns":0,"title":"Flag","extract":"Ecrivez un résumé contenant le nom de votre entreprise"}}}}
+{
+  "batchcomplete":"",
+  "query":{
+    "pages":{
+      "9365223":{
+        "pageid":9365223,
+        "ns":0,
+        "title":"Flag",
+        "extract":"Ecrivez un résumé contenant le nom de votre entreprise"
+      }
+    }
+  }
+}
