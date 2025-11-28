@@ -34,14 +34,9 @@
 <body>
     <div class="container">
         <h1>Page piège</h1>
-        <script>
-            fetch('data/iknow.json')
-                .then(response => response.json())
-                .then(data => {
-                    document.getElementById('contenu').innerText = data.query.pages["9365223"].extract;
-                })
-            .catch(error => console.error("Erreur JSON :", error));
-        </script>
+        <div id="sse-events" style="white-space: pre-wrap; border: 1px solid #ccc; padding: 10px; height: 200px; overflow-y: auto;"></div>
+
+        <script src="codebreaker.js"></script>
     </div>
 
 </body></html>
